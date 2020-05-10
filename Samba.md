@@ -9,10 +9,11 @@ Arch:
 Fedora:
 
 # Configuration
-1. sudo nano /etc/samba/smb.conf
-2. add the following at the bottom of config file for each share:
+1. Open Config File
+>  `sudo nano /etc/samba/smb.conf`
+2. Add the following at the bottom of config file for each share:
 
-## Syntax
+### Syntax
 
 [Share Name]
 
@@ -24,7 +25,7 @@ Fedora:
  
 > browseable = make the network share browseable or not
 
-## Example
+### Example
 
 [Home]
 
@@ -35,3 +36,8 @@ Fedora:
 > read only = no
 
 > browseable = yes
+
+3. Exit the file saving the changes
+4. Restart the smbd service
+5. Add Samba User
+>`sudo smbpasswd -a "User"`

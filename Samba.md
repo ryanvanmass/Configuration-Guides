@@ -2,7 +2,7 @@
 Samba allows you to share Folders over a network
 
 # Installation
-Debian: sudo apt-get install samba
+Debian: `sudo apt-get install samba`
 
 Arch:
 

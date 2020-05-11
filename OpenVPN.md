@@ -8,3 +8,11 @@ Run your Own VPN
 > `chmod 755 openvpn-install.sh`
 2. Execute the script
 > `./openvpn-install.sh`
+
+# Auto Connect Clients
+1. Convert the .ovpn file to .conf
+2. copy the .conf file to /etc/openvpn
+3. start the service
+> `sudo systemctl start openvpn@.conf file name`
+4. enable to service to runb at start
+> `sudo systemctl enable openvpn@.conf file name`

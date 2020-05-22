@@ -11,7 +11,9 @@ Run your Own VPN
 
 # Auto Connect Clients
 1. Convert the .ovpn file to .conf
+> `cp file.ovpn file.conf`
 2. copy the .conf file to /etc/openvpn
+> `sudo mv file.conf /etc/openvpn`
 3. start the service
 > `sudo systemctl start openvpn@.conf file name`
 4. enable to service to runb at start
